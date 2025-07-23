@@ -1,26 +1,45 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+@keyframes marquee {
+  0% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+.animate-marquee {
+  animation: marquee 10s linear infinite;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+/* the hero css */
+.circular-hero {
+  filter: invert(1) brightness(0) saturate(100%) !important;
+  transition: transform 0.5s;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+.circular-hero:hover {
+  transform: rotate(90deg);
+}
+
+@media (min-width: 768px) {
+  .work-line {
+    right: 150px !important; /* Adjusted for larger screens */
   }
+  
+  
 }
 
-body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+@media (max-width: 767px) {
+  .AgriDome{
+    width: 50vh !important;
+  }
+  
+  
 }
+@media (max-width: 320px) {
+  .AgriDome{
+    width: 38vh !important;
+  }
+  
+  
+}
+
+
