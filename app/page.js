@@ -14,7 +14,7 @@ export default function Home() {
       <Product/>
       <Certification />
       <Socials/>
-      <p className="uppercase mt-5 italic">designed by <span className="font-bold ">Mosco</span> from <span className="font-bold"> cyclebreeze team lieutenants</span></p>
+      <p className="uppercase text-sm text-center mt-5 italic">designed by <span className="font-bold ">Mosco</span> from <span className="font-bold"> cyclebreeze team lieutenants</span></p>
       
     </div>
 
