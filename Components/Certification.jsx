@@ -1,4 +1,4 @@
-import * as motion from "motion/react-client";
+
 
 import CertificationAnime from "./CertificationAnime";
 import CertificationText from "./CertificationText";

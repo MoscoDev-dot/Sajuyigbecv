@@ -1,6 +1,6 @@
 import React from "react";
 import { Playfair_Display } from "next/font/google";
-import Image from "next/image";
+
 
 // google font
 const bokor = Playfair_Display({

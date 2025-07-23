@@ -1,7 +1,6 @@
 import React from "react";
 import { Playfair_Display } from "next/font/google";
-import Image from "next/image";
-import CertyPropsText from "./CertyPropsText";
+
 import WorkPropsText from "./WorkPropsText";
 
 // google font
