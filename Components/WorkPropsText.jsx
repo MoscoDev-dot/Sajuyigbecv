@@ -12,12 +12,12 @@ const bokor = Playfair_Display({
 const WorkPropsText = ({ text1, text2, text3, link }) => {
   return (
     <a href={link} target="_blank" rel="noopener noreferrer" className="cursor-pointer">
-      <div className={`${bokor.className} mt-10 md:mt-50 flex`}>
+      <div style={{ fontFamily: 'Kugile' }} className={` mt-10 md:mt-50 flex`}>
         <div>
-          <p className="uppercase font-bold lg:text-[30px] text-[11px] ms-0 md:ms-7  ">
+          <p className="uppercase font-[400] text-[#111111] lg:text-[40px] md:text-[12px]  text-[11px] ms-0 md:ms-7  ">
             {text1}
           </p>
-          <span className="ms-3 uppercase text-sm lg:text-lg md:ms-7">
+          <span className="ms-3 uppercase  text-[9px] lg:text-lg  md:ms-7">
             {text2}
           </span>{" "}
           <br />

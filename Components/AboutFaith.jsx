@@ -13,10 +13,10 @@ const AboutFaith = () => {
   return (
     <>
       <Container maxWidth={false} className="w-full">
-        <div
+        <div 
           className={` ${roboto.className} grid mt-60 md:mt-0 grid-cols-1 lg:grid-cols-2 gap-4`}
         >
-          <div>
+          <div >
             <div className="uppercase mt-0 lg:mt-20 md:text-lg text-base">
               Faith Olaniyi is a creative generalist specialized in
               <span className="font-black ps-2">

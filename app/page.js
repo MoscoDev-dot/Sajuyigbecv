@@ -1,4 +1,3 @@
-
 import Certification from "@/Components/Certification";
 import Nav from "@/Components/Nav";
 import Product from "@/Components/Product";
@@ -7,16 +6,17 @@ import WorkExperience from "@/Components/WorkExperience";
 
 
 export default function Home() {
-  return(
-    <div>
+  return (
+    <div className="">
       <Nav />
       <WorkExperience />
-      <Product/>
+      <Product />
       <Certification />
-      <Socials/>
-      <p className="uppercase text-sm text-center mt-5 italic">designed by <span className="font-bold ">Mosco</span> from <span className="font-bold"> cyclebreeze team lieutenants</span></p>
-      
+      <Socials />
+      <p  className="uppercase   text-sm text-center mt-5 italic">
+        designed by <span className="font-bold ">Mosco</span> from{" "}
+        <span className="font-bold"> cyclebreeze team lieutenants</span>
+      </p>
     </div>
-
   );
-};
+}

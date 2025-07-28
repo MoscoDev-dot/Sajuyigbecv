@@ -1,13 +1,16 @@
 @import "tailwindcss";
 
 @keyframes marquee {
-  0% { transform: translateX(100%); }
-  100% { transform: translateX(-100%); }
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
 }
 .animate-marquee {
   animation: marquee 10s linear infinite;
 }
-
 
 /* the hero css */
 .circular-hero {
@@ -23,23 +26,28 @@
   .work-line {
     right: 150px !important; /* Adjusted for larger screens */
   }
-  
-  
 }
 
 @media (max-width: 767px) {
-  .AgriDome{
+  .AgriDome {
     width: 35vh !important;
   }
-  
-  
 }
 @media (max-width: 320px) {
-  .AgriDome{
+  .AgriDome {
     width: 38vh !important;
   }
-  
-  
 }
+
+/* kugilefont */
+
+@font-face {
+  font-family: 'Kugile';
+  src: url('/my-app/public/KugileFont/Kugile_Demo.ttf') format('truetype'); /* Adjust the path if necessary */
+ 
+}
+
+
+
 
 

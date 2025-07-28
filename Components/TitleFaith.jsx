@@ -50,9 +50,9 @@ const TitleFaith = () => {
       <Container maxWidth={false} className="w-full">
         <div>
           <div className="flex flex-row items-center justify-between">
-            <h1
-              className={`${bokor.className} lg:text-[100px] text-[40px]`}
-              style={transformStyle}
+            <h1 style={{fontFamily: 'Kugile', ...transformStyle}}
+              className={` lg:text-[100px] text-[40px]`}
+              
             >
               FOUNDER & CEO, <br />
               CHIEF OF STAFF, <br />
@@ -67,8 +67,8 @@ const TitleFaith = () => {
           </div>
           <div>
             <h1
-              className={`${bokor.className} lg:text-[100px] text-[40px]`}
-              style={transformStyle}
+              className={` lg:text-[100px] text-[40px]`}
+              style={{fontFamily: 'Kugile', ...transformStyle}}
             >
               CREATIVE SPECIALIST, <br /> BUSINESS STRATEGIST
             </h1>

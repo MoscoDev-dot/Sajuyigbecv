@@ -11,7 +11,7 @@ const bokor = Playfair_Display({
 
 const CertyPropsText = ({ text1, text2, text3 }) => {
   return (
-    <div className={`${bokor.className} mt-10 md:mt-50 flex`}>
+    <div style={{ fontFamily: 'Kugile' }} className={` mt-10 md:mt-50 flex`}>
       <div>
         <Image
           src="/focused.svg"
@@ -22,7 +22,7 @@ const CertyPropsText = ({ text1, text2, text3 }) => {
         />
       </div>
       <div>
-        <p className="uppercase  md:text-[30px] text-[15px] ms-0 md:ms-7  ">
+        <p  className="uppercase  md:text-[30px] text-[15px] ms-0 md:ms-7  ">
           {text1}
         </p>
         <span className="ms-3 text-sm md:text-lg md:ms-7">{text2}</span> <br />

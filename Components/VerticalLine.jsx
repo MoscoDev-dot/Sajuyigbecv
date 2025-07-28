@@ -7,15 +7,15 @@ const VerticalLine = ({text}) => {
     <div>
       {/* Rotated Resume and symbol before vertical line */}
       <div
-        className="flex flex-col items-center absolute"
+        className="flex scroll-down m flex-col items-center absolute"
         style={{
-          right: -60, // place before the vertical line (adjust as needed)
+          right: -40, // place before the vertical line (adjust as needed)
           top: "25%",
           transform: "translateY(-50%) rotate(90deg)",
           zIndex: 1,
         }}
       >
-        <span className="flex items-center gap-2">
+        <span className="flex lg:mb-10 mb-0  items-center gap-2">
           <p className="text-[10px] font-medium lg:text-[1.06vw]">
             {" "}
             {text}

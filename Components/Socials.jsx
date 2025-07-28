@@ -14,13 +14,13 @@ const bokor = Playfair_Display({
 const Socials = () => {
   return (
     <div>
-      <Container maxWidth={false} className="w-full   relative">
+      <Container maxWidth={false} className="w-full   relative overflow-x-hidden">
         <LeftLine />
 
         <div className="grid md:grid-cols-2 grid-cols-1 gap-4">
           <div className="mx-auto">
-            <p
-              className={`${bokor.className} text-[23px] pt-10  md:text-[40px] lg:text-[100px] font-black uppercase`}
+            <p style={{ fontFamily: 'Kugile' }}
+              className={`text-[23px] pt-10  md:text-[40px] lg:text-[100px] font-[400] uppercase`}
             >
               socials
             </p>
@@ -32,8 +32,8 @@ const Socials = () => {
           </div>
 
           <Link color="inherit"  href="mailto: hello@faitholaniyi.com" underline="none">
-          <div className="flex justify-center md:border-l border-t md:border-t-0 ms-1 md:ms-0  items-center h-full">
-            <p className="italic md:text-5xl text-xl mt-5 md:mt-0 text-center">
+          <div  className="flex justify-center md:border-l border-t md:border-t-0 ms-1 md:ms-0  items-center h-full">
+            <p style={{ fontFamily: 'Kugile' }} className="italic md:text-5xl text-xl mt-5 pb-8 md:pb-0 md:mt-0 text-center">
               Connect with me <br /> via mail at hello@faitholaniyi.com
             </p>
           </div></Link>

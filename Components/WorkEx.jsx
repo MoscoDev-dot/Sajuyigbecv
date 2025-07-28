@@ -13,8 +13,8 @@ const WorkEx = () => {
   return (
     <div>
       {/* Title */}
-          <div
-            className={` ${bokor.className} flex text-[23px] md:text-[40px] lg:text-[80px] work-text font-black pt-8 uppercase`}
+          <div style={{ fontFamily: 'Kugile' }}
+            className={`  flex text-[23px] md:text-[40px] lg:text-[80px] work-text font-[400] pt-8 uppercase`}
           >
             <span>
               work <br /> experiences

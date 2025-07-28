@@ -17,7 +17,7 @@ const bokor = Playfair_Display({
 const Product = () => {
   return (
     <div>
-      <Container maxWidth={false} className="w-full relative">
+      <Container maxWidth={false} className="w-full relative overflow-x-hidden">
         <RightLine
           className="absolute work-line"
           style={{
@@ -29,8 +29,8 @@ const Product = () => {
           }}
         />
         <div>
-          <p
-            className={`${bokor.className} uppercase lg:text-[80px] font-bold pt-10 lg:pt-20 text-[23px]`}
+          <p style={{ fontFamily: 'Kugile' }}
+            className={` uppercase lg:text-[80px] font-[400] pt-10 lg:pt-20 text-[23px]`}
           >
             Product <br />
             showcase

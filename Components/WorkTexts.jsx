@@ -13,7 +13,7 @@ const bokor = Playfair_Display({
 const WorkTexts = () => {
   return (
     <div>
-      <div className="">
+      <div  className="">
         
 
         <WorkPropsText

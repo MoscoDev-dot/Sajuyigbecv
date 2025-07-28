@@ -15,8 +15,8 @@ const CertificationText = () => {
     <div>
       <div className="...">
         <div className="flex">
-          <p
-            className={`${bokor.className} uppercase lg:text-[80px] font-bold mt-10 lg:mt-20 text-[23px]`}
+          <p style={{ fontFamily: 'Kugile' }}
+            className={` uppercase lg:text-[80px] font-[400] mt-10 lg:mt-20 text-[23px]`}
           >
             certification
           </p>

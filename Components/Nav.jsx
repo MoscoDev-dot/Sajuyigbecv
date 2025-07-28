@@ -10,7 +10,7 @@ import Faith from "./Faith";
 const Nav = () => {
   return (
     <div>
-      <Container maxWidth={false} className="w-full relative">
+      <Container maxWidth={false} className="w-full relative overflow-x-hidden">
         <div
           className="flex px-8 md:px-13 items-center "
           style={{ minHeight: "70px" }}
