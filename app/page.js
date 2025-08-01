@@ -7,7 +7,8 @@ import { SmoothCursor } from "@/components/ui/smooth-cursor";
 
 
 export default function Home() {
-  return (
+  return(
+
     <div className="">
      
       <Nav />
@@ -21,5 +22,6 @@ export default function Home() {
       </p>
      <SmoothCursor />
     </div>
+
   );
 };
