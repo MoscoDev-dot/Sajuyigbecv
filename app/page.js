@@ -3,7 +3,7 @@ import Nav from "@/Components/Nav";
 import Product from "@/Components/Product";
 import Socials from "@/Components/Socials";
 import WorkExperience from "@/Components/WorkExperience";
-import { SmoothCursor } from "@/components/ui/smooth-cursor";
+import { SmoothCursor } from "@/components/ui/smooth-cursor.jsx";
 
 
 export default function Home() {

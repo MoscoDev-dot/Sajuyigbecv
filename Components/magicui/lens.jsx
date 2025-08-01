@@ -1,4 +1,4 @@
-"use client";;
+"use client";
 import { AnimatePresence, motion, useMotionTemplate } from "motion/react";
 import React, { useCallback, useMemo, useRef, useState } from "react";
 
@@ -11,7 +11,7 @@ export function Lens({
   defaultPosition,
   duration = 0.1,
   lensColor = "black",
-  ariaLabel = "Zoom Area"
+  ariaLabel = "Zoom Area",
 }) {
   if (zoomFactor < 1) {
     throw new Error("zoomFactor must be greater than 1");
@@ -63,13 +63,15 @@ export function Lens({
           WebkitMaskImage: maskImage,
           transformOrigin: `${x}px ${y}px`,
           zIndex: 50,
-        }}>
+        }}
+      >
         <div
           className="absolute inset-0"
           style={{
             transform: `scale(${zoomFactor})`,
             transformOrigin: `${x}px ${y}px`,
-          }}>
+          }}
+        >
           {children}
         </div>
       </motion.div>
@@ -86,7 +88,8 @@ export function Lens({
       onKeyDown={handleKeyDown}
       role="region"
       aria-label={ariaLabel}
-      tabIndex={0}>
+      tabIndex={0}
+    >
       {children}
       {isStatic || defaultPosition ? (
         LensContent

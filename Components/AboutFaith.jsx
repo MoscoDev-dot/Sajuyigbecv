@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { Roboto_Serif } from "next/font/google";
-import { Lens } from "@/components/magicui/lens";
+import { Lens } from "@/components/magicui/lens.jsx";
 
 const roboto = Roboto_Serif({
   subsets: ["latin"],
@@ -12,6 +12,7 @@ const roboto = Roboto_Serif({
 const AboutFaith = () => {
   return (
     <>
+    
       <Container maxWidth={false} className="w-full">
         <div
           className={` ${roboto.className} grid mt-60 md:mt-0 grid-cols-1 lg:grid-cols-2 gap-4`}
