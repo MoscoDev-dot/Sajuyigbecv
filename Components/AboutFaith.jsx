@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { Roboto_Serif } from "next/font/google";
-import { Lens } from "@/components/magicui/lens.jsx";
+import  Lens  from "@/Components/magicui/Lens.jsx";
 
 const roboto = Roboto_Serif({
   subsets: ["latin"],
