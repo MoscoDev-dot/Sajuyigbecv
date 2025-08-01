@@ -6,7 +6,7 @@ import { useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
 
 import Image from "next/image";
-import  Lens  from "@/Components/magicui/Lens.jsx";
+import { Lens } from "@/Components/magicui/lens";
 
 const WorkAnime = () => {
   const images = [
