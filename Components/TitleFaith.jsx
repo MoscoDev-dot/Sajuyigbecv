@@ -4,6 +4,8 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import { Playfair_Display } from "next/font/google";
 
+
+
 // google font
 const bokor = Playfair_Display({
   subsets: ["latin"],
@@ -49,6 +51,7 @@ const TitleFaith = () => {
     <div className="py-20 px-2 md:px-5">
       <Container maxWidth={false} className="w-full">
         <div>
+            
           <div className="flex flex-row items-center justify-between">
             <h1 style={{fontFamily: 'Kugile', ...transformStyle}}
               className={` lg:text-[100px] text-[40px]`}
@@ -57,6 +60,7 @@ const TitleFaith = () => {
               FOUNDER & CEO, <br />
               CHIEF OF STAFF, <br />
             </h1>
+            
             <Image
               className="circular-hero hidden md:block img-fluid"
               src="/circular-hero.png"

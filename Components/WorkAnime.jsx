@@ -6,6 +6,7 @@ import { useScroll } from "framer-motion";
 import { useTransform } from "framer-motion";
 
 import Image from "next/image";
+import { Lens } from "@/components/magicui/lens";
 
 const WorkAnime = () => {
   const images = [
@@ -33,6 +34,7 @@ const WorkAnime = () => {
 
   return (
     <div className=" md:flex hidden md:block justify-center items-center h-screen w-full bg-white">
+        <Lens>
       <motion.div
         key={index}
         initial={{ opacity: 0 }}
@@ -48,6 +50,7 @@ const WorkAnime = () => {
           className="w-full h-full "
         />
       </motion.div>
+      </Lens>
     </div>
   );
 };

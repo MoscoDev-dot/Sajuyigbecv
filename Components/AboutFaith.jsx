@@ -2,7 +2,7 @@ import { Container } from "@mui/material";
 import Image from "next/image";
 import React from "react";
 import { Roboto_Serif } from "next/font/google";
-
+import { Lens } from "@/components/magicui/lens";
 
 const roboto = Roboto_Serif({
   subsets: ["latin"],
@@ -13,10 +13,10 @@ const AboutFaith = () => {
   return (
     <>
       <Container maxWidth={false} className="w-full">
-        <div 
+        <div
           className={` ${roboto.className} grid mt-60 md:mt-0 grid-cols-1 lg:grid-cols-2 gap-4`}
         >
-          <div >
+          <div>
             <div className="uppercase mt-0 lg:mt-20 md:text-lg text-base">
               Faith Olaniyi is a creative generalist specialized in
               <span className="font-black ps-2">
@@ -27,14 +27,17 @@ const AboutFaith = () => {
               himself as a prolific technological management strategist,
               recognized for diverse experiences across varieties of industries.
             </div>
+
             <div className="flex justify-end">
-              <Image
-                src="/faith.png"
-                alt="Mr. Faith"
-                width={400}
-                height={350}
-                className="lg:hidden mt-5"
-              />
+              <Lens>
+                <Image
+                  src="/faith.png"
+                  alt="Mr. Faith"
+                  width={400}
+                  height={350}
+                  className="lg:hidden mt-5"
+                />
+              </Lens>
             </div>
 
             <div className="uppercase md:text-lg text-base mt-5">
@@ -48,18 +51,18 @@ const AboutFaith = () => {
             </div>
           </div>
           <div>
-            <Image
-              src="/faith.png"
-              alt="Mr. Faith"
-              width={400}
-              height={350}
-              className="lg:block hidden w-[40vw] py-8 ms-0 lg:ms-5 h-[100vh]"
-            />
+            <Lens>
+              <Image
+                src="/faith.png"
+                alt="Mr. Faith"
+                width={400}
+                height={350}
+                className="lg:block hidden w-[40vw] py-8 ms-0 lg:ms-5 h-[100vh]"
+              />
+            </Lens>
           </div>
         </div>
-        
       </Container>
-      
     </>
   );
 };
