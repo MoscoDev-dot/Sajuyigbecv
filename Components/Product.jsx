@@ -38,6 +38,7 @@ const Product = () => {
           <div className="flex ">
             <div>
               <Success
+              link={"https://blog.faitholaniyi.com"}
                 text={
                   "here are some of the products i’ve lead, shipped and ideated"
                 }

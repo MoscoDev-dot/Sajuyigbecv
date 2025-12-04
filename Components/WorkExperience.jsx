@@ -29,7 +29,7 @@ const WorkExperience = () => {
               className="mt-7 lg:mt-8 me-10 md:me-25 lg:me-30 md:w-[80px] md:h-[80px]  "
             />
           </div>
-          <Success text={"I am very acquainted with success"} />
+          <Success link={"https://blog.faitholaniyi.com"} text={"Visit Faith Olaniyi's Blog"} />
         </div>
       </Container>
       <hr className="md:me-37 me-12 " />

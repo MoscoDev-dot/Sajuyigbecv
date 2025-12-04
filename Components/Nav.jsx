@@ -1,13 +1,17 @@
-import React from "react";
-import { Container,  } from "@mui/material";
+"use client"
+import React, { useState } from "react";
+import { Container } from "@mui/material";
 
 import AboutFaith from "@/Components/AboutFaith";
 import TitleFaith from "@/Components/TitleFaith";
 import MovingText from "./MovingText";
 import VerticalLine from "./VerticalLine";
 import Faith from "./Faith";
+import RequestResumeModal from "./RequestResumeModal";
 
 const Nav = () => {
+  const [openModal, setOpenModal] = useState(false);
+
   return (
     <div>
       <Container maxWidth={false} className="w-full relative overflow-x-hidden">
@@ -27,10 +31,9 @@ const Nav = () => {
           </div> */}
           <Faith />
           <div className="flex pt-8 md:pt-6 justify-end w-full">
-            <a
-              href="/OLANIYI FAITH AYODEJI CV (1).pdf" // replace with the actual path to your resume
-              download
-              className="no-underline"
+            <button
+              onClick={() => setOpenModal(true)}
+              className="no-underline bg-transparent border-none cursor-pointer p-0"
             >
               <span className="flex items-center text-[#111111] gap-2">
                 <p className="text-[10px] font-medium lg:text-[1.06vw]">
@@ -50,7 +53,7 @@ const Nav = () => {
                   />
                 </svg>
               </span>
-            </a>
+            </button>
           </div>
           <VerticalLine text={"SCROLL DOWN"} />
         </div>
@@ -58,6 +61,10 @@ const Nav = () => {
         <AboutFaith />
       </Container>
       <MovingText />
+      <RequestResumeModal
+        open={openModal}
+        onClose={() => setOpenModal(false)}
+      />
     </div>
   );
 };

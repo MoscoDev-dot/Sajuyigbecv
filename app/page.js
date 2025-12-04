@@ -9,16 +9,16 @@ import { SmoothCursor } from "@/Components/ui/smooth-cursor";
 export default function Home() {
   return(
 
-    <div className="">
+    <div className="cursor-none !important">
      
       <Nav />
       <WorkExperience />
       <Product />
       <Certification />
       <Socials />
-      <p className="uppercase   text-sm text-center mt-5 italic">
-        designed by <span className="font-bold ">Mosco</span> from{" "}
-        <span className="font-bold"> cyclebreeze team lieutenants</span>
+      <p className="uppercase   text-[10px] text-center mt-5 italic">
+        designed by <span className="font-semibold ">Mosco</span> from{" "}
+        <span className="font-semibold"> cyclebreeze team lieutenants</span>
       </p>
      <SmoothCursor />
     </div>
