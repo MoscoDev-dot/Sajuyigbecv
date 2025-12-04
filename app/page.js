@@ -1,5 +1,4 @@
 import Certification from "@/Components/Certification";
-// Force git update
 import Nav from "@/Components/Nav";
 import Product from "@/Components/Product";
 import Socials from "@/Components/Socials";
